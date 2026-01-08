@@ -94,7 +94,7 @@ export default function App() {
         setLoading(true);
         setStatus('Generating AI response...');
         try {
-            const res = await axios.post('http://localhost:5000/api/ask-ai', { prompt });
+            const res = await axios.post('https://futureblink-dafu.onrender.com/api/ask-ai', { prompt });
             const aiResponse = res.data.response;
             setResult(aiResponse);
             setNodes((nds) =>
@@ -119,7 +119,7 @@ export default function App() {
         setLoading(true);
         setStatus('Saving to MongoDB...');
         try {
-            await axios.post('http://localhost:5000/api/save-flow', { prompt, response: result });
+            await axios.post('https://futureblink-dafu.onrender.com/api/save-flow', { prompt, response: result });
             setStatus('Flow saved successfully!');
         } catch (err) {
             console.error(err);
