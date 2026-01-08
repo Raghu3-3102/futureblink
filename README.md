@@ -37,7 +37,7 @@ FutureBlink is a full-stack application with a React frontend and a Node.js/Expr
 1. Start the backend:
    ```bash
    cd backend
-   npm start
+   npm run dev
    ```
 2. Start the frontend:
    ```bash
