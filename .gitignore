@@ -1,0 +1,20 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production
+dist/
+dist-ssr/
+build/
+
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# User requested to INCLUDE .env, so we do NOT add it here
+# If it were in a default template, we would explicitly allow it like this:
+# !
